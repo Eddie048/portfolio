@@ -4,13 +4,39 @@
     width: 100%;
 }
 
-.center {
+.name-text {
+    /* Set to the middle of the screen */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+
+    font-size: 50px;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: darkgrey;
+}
+
+#navbar a {
+    float:left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#navbar a:hover {
+    background-color: grey;
+}
+
+#navbar a:active {
+    background-color: grey;
+}
+
+/* Reset margin and padding for all objects */
 * {
     margin: 0;
     padding: 0;
