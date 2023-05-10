@@ -1,0 +1,17 @@
+.large-section {
+    background-color: lightgray;
+    min-height:100vh;
+    width: 100%;
+}
+
+.center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
