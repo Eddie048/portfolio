@@ -36,6 +36,13 @@
     background-color: grey;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 /* Reset margin and padding for all objects */
 * {
     margin: 0;
