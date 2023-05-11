@@ -1,11 +1,39 @@
+/* Reset margin and padding for all objects */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana;
+}
+
 .large-section {
     background-color: lightgray;
     min-height:100vh;
 }
 
-.small-section {
-    background-color: lightgray;
+#contact {
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+#contact h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+#contact div {
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
     
+}
+
+#contact div img {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .name-text {
@@ -25,7 +53,7 @@
 
 #navbar a {
     float:left;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -46,9 +74,3 @@
     top: 0;
     width: 100%;
   }
-
-/* Reset margin and padding for all objects */
-* {
-    margin: 0;
-    padding: 0;
-}
