@@ -28,7 +28,7 @@ body{
 
 .large-section {
     background-color: lightgray;
-    padding: 80px;
+    padding: 80px 15%;
     min-height:100vh;
 }
 
