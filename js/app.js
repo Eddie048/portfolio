@@ -20,3 +20,6 @@ function updateNavBar() {
 }
 
 window.onscroll = function() {updateNavBar()};
+
+// Run once in case the navbar is already in position
+updateNavBar();
