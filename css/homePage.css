@@ -67,27 +67,3 @@
         transform: translateX(-1250px);
     }
 }
-
-/* Styling for contact section */
-
-#contact {
-    background-color: darkgrey;
-    padding: 10px;
-}
-
-#contact h1 {
-    font-size: 35px;
-    text-align: center;
-}
-
-#contact div {
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: fit-content;
-    
-}
-
-#contact div img {
-    margin: 10px;
-}
