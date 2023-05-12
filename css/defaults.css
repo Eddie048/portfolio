@@ -1,0 +1,80 @@
+/* General styling */
+
+/* Reset margin and padding for all objects */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+}
+
+.custom-button:hover {
+    background-color: gray;
+}
+
+.large-section {
+    background-color: lightgray;
+    padding: 80px;
+    min-height:100vh;
+}
+
+.large-section h1 {
+    font-size: 35px;
+}
+
+.large-section p {
+    font-size: 20px;
+}
+
+.large-section hr {
+    border: none;
+    background-color: black;
+    height: 2px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Styling for navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: darkgrey;
+    z-index: 100;
+}
+
+#navbar a {
+    float:left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#navbar a:hover {
+    background-color: grey;
+}
+
+#navbar a:active {
+    background-color: grey;
+}
+
+/* The sticky class is added to the navbar in JS when necessary */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
