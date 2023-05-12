@@ -19,6 +19,7 @@ body{
     background-color: darkgray;
     text-decoration: none;
     color: black;
+    width: fit-content;
 }
 
 .custom-button:hover {
