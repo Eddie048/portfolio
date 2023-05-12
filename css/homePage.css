@@ -12,6 +12,20 @@ body{
     font-family: Verdana;
 }
 
+.custom-button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+}
+
+.custom-button:hover {
+    background-color: gray;
+}
+
 .large-section {
     background-color: lightgray;
     padding: 80px;
@@ -84,7 +98,7 @@ body{
     display: flex;
 }
 
-.about-flex-box div {
+.about-paragraph {
     width: 60%;
 }
 
@@ -93,6 +107,16 @@ body{
     height: fit-content;
     border-radius: 50%;
     margin-left: auto;
+}
+
+.about-buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-buttons a {
+    margin-right: 40px;
 }
 
 #skills-box {
