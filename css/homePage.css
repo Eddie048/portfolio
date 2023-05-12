@@ -67,3 +67,29 @@
         transform: translateX(-1250px);
     }
 }
+
+/* Styling for projects section */
+
+.project-box {
+    background-color: #e6e6e6;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 50px;
+}
+
+.project-box img {
+    width: 40%;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description a {
+    margin-top: 20px;
+}
