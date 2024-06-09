@@ -1,19 +1,7 @@
 import React from "react";
+import skills from "../assets/index.tsx";
 
 const Skills = () => {
-  const skills = [
-    { name: "Java", icon: undefined },
-    { name: "c", icon: undefined },
-    { name: "Python", icon: undefined },
-    { name: "Javascript", icon: undefined },
-    { name: "HTML", icon: undefined },
-    { name: "CSS", icon: undefined },
-    { name: "Tyescript", icon: undefined },
-    { name: "React", icon: undefined },
-    { name: "Tailwind", icon: undefined },
-    { name: "SQL", icon: undefined },
-  ];
-
   return (
     <div className="w-full h-screen bg-slate-900">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
