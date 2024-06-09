@@ -7,8 +7,8 @@ const Navbar = () => {
   const pageSections = ["Home", "Projects", "About", "Contact"];
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-800 text-gray-300 text-xl">
-      <a className="font-bold text-2xl h-[80px] content-center" href="/">
+    <div className="fixed w-full h-20 flex justify-between items-center px-4 text-gray-300 text-xl">
+      <a className="font-bold text-2xl content-center" href="/">
         Edward Stump
       </a>
 
@@ -17,7 +17,7 @@ const Navbar = () => {
         {pageSections.map((pageSection) => (
           <li
             key={pageSection}
-            className="px-4 h-[80px] cursor-pointer hover:bg-slate-700 content-center"
+            className="px-4 h-20 cursor-pointer hover:bg-slate-800 content-center"
           >
             {pageSection}
           </li>
@@ -33,14 +33,14 @@ const Navbar = () => {
       <ul
         className={
           isNavOpen
-            ? "md:hidden absolute top-0 left-0 w-full h-screen bg-slate-800 justify-center items-center flex flex-col"
+            ? "md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 justify-center items-center flex flex-col"
             : "hidden"
         }
       >
         {pageSections.map((pageSection) => (
           <li
             key={pageSection}
-            className="px-4 cursor-pointer py-6 text-4xl hover:bg-slate-700"
+            className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl hover:bg-slate-800"
           >
             {pageSection}
           </li>
