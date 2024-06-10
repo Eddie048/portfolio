@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  // const handleClick = () => setNav(!nav);
-  const pageSections = ["Home", "Projects", "About", "Contact"];
+
+  const pageSections = [
+    { name: "Home", id: "home" },
+    { name: "Skills", id: "skills" },
+  ];
 
   return (
     <div className="fixed w-full h-20 flex justify-between items-center px-4 z-10 bg-slate-900 text-gray-300 text-xl">
@@ -14,13 +18,16 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        {pageSections.map((pageSection) => (
-          <li
-            key={pageSection}
+        {pageSections.map(({ name, id }) => (
+          <Link
+            to={id}
+            key={id + "-topNav"}
+            smooth="true"
+            duration={500}
             className="px-4 h-20 cursor-pointer hover:bg-slate-800 content-center"
           >
-            {pageSection}
-          </li>
+            {name}
+          </Link>
         ))}
       </ul>
 
@@ -37,13 +44,14 @@ const Navbar = () => {
             : "hidden"
         }
       >
-        {pageSections.map((pageSection) => (
-          <li
-            key={pageSection}
+        {pageSections.map(({ name, id }) => (
+          <Link
+            to={id}
+            key={id + "-mobile"}
             className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl hover:bg-slate-800"
           >
-            {pageSection}
-          </li>
+            {name}
+          </Link>
         ))}
       </ul>
     </div>
