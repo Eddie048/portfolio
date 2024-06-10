@@ -9,7 +9,7 @@ import sql from "./sql.png";
 import tailwind from "./tailwind.jpeg";
 import typescript from "./typescript.png";
 
-export default [
+const skills = [
   { name: "Java", icon: java },
   { name: "C", icon: c },
   { name: "Python", icon: python },
@@ -21,3 +21,5 @@ export default [
   { name: "Tailwind", icon: tailwind },
   { name: "SQL", icon: sql },
 ];
+
+export default skills;
