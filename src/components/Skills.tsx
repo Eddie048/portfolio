@@ -1,5 +1,5 @@
 import React from "react";
-import skills from "../assets/index.tsx";
+import { skills } from "../assets/index.tsx";
 
 const Skills = () => {
   return (
