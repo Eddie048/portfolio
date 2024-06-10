@@ -4,11 +4,11 @@ import Skills from "./components/Skills.tsx";
 
 function App() {
   return (
-    <body className="font-[inter]">
+    <div className="font-[inter]">
       <Navbar />
       <Home />
       <Skills/>
-    </body>
+    </div>
   );
 }
 
