@@ -16,7 +16,7 @@ const skills = [
   { name: "Javascript", icon: javascript },
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
-  { name: "Tyescript", icon: typescript },
+  { name: "Typescript", icon: typescript },
   { name: "React", icon: react },
   { name: "Tailwind", icon: tailwind },
   { name: "SQL", icon: sql },
