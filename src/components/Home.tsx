@@ -13,7 +13,7 @@ const Home = () => {
           I'm a Software Engineer and Web Developer
         </h2>
         <button className="group w-fit h-min">
-          <div className="animate-bounce text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 my-7 w-fit group-hover:bg-pink-600 group-hover:border-pink-600 group-hover:text-slate-900">
+          <div className="animate-bounce text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 my-7 w-fit group-hover:bg-pink-600 z-0 group-hover:border-pink-600 group-hover:text-slate-900">
             Explore my work <IoIosArrowForward className="ml-2" />
           </div>
         </button>

@@ -7,7 +7,7 @@ const Navbar = () => {
   const pageSections = ["Home", "Projects", "About", "Contact"];
 
   return (
-    <div className="fixed w-full h-20 flex justify-between items-center px-4 text-gray-300 text-xl">
+    <div className="fixed w-full h-20 flex justify-between items-center px-4 z-10 bg-slate-900 text-gray-300 text-xl">
       <a className="font-bold text-2xl content-center" href="/">
         Edward Stump
       </a>
