@@ -48,6 +48,9 @@ const Navbar = () => {
           <Link
             to={id}
             key={id + "-mobile"}
+            smooth="true"
+            duration={500}
+            onClick={() => setIsNavOpen(false)}
             className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl hover:bg-slate-800"
           >
             {name}
