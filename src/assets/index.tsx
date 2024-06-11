@@ -63,7 +63,7 @@ const projects = [
   {
     title: "Assorted Threading Problems",
     description:
-      "As part of an operating systems course, I solved various threading problems",
+      "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
     image: juststance_demo,
   },
 ];
