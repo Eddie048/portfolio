@@ -8,6 +8,7 @@ const Navbar = () => {
   const pageSections = [
     { name: "Home", id: "home" },
     { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
   ];
 
   return (

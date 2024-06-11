@@ -1,6 +1,7 @@
 import Home from "./components/Home.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Skills from "./components/Skills.tsx";
+import Projects from "./components/Projects.tsx";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Home />
       <Skills/>
+      <Projects/>
     </div>
   );
 }

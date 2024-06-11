@@ -14,7 +14,7 @@ const Home = () => {
           I'm a Software Engineer and Web Developer
         </h2>
         <Link
-          to="skills"
+          to="projects"
           smooth="true"
           duration={500}
           className="group w-fit cursor-pointer my-7"
