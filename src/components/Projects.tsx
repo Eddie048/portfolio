@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "../assets/index.tsx";
+import videoTest from "../assets/planet-physics-demo.mov";
 
 const Projects = () => {
   return (
@@ -14,6 +15,25 @@ const Projects = () => {
         <p className="text-gray-300 text-lg">
           Explore some of the projects I've worked on over the years.
         </p>
+        <div>
+          {projects.map(({ title, description, media_src, isVideo }) => (
+            <div key={title}>
+              <p className="text-gray-300 text-lg">{title}</p>
+              {isVideo ? (
+                <video
+                  src={media_src}
+                  controls={false}
+                  autoPlay={true}
+                  loop={true}
+                  muted={true}
+                />
+              ) : (
+                <img src={media_src} alt={title} />
+              )}
+              <p className="text-gray-300 text-lg">{description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
