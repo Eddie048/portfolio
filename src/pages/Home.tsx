@@ -1,9 +1,9 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-scroll";
-import Navbar from "./Navbar";
-import Skills from "./Skills";
-import Projects from "./Projects";
+import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 const Home = () => {
   return (

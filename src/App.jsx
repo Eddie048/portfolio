@@ -1,12 +1,12 @@
-import Home from "./components/Home.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Skills from "./components/Skills.tsx";
-import Projects from "./components/Projects.tsx";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.tsx";
 
 function App() {
   return (
     <div className="font-[inter]">
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
