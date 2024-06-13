@@ -13,9 +13,10 @@ const Projects = () => {
           My Projects
         </h2>
         <p className="text-gray-300 text-lg">
-          Explore some of the projects I've worked on over the years.
+          Explore some of the projects I've worked on over the years. Click/tap
+          or hover the images to learn more!
         </p>
-        <div className="grid grid-cols-2 justify-items-center mx-auto gap-12">
+        <div className="grid grid-cols-2 justify-items-center mx-auto gap-14 mt-6">
           {projects.map(({ title, description, media_src, isVideo }) => (
             <Card
               key={title}

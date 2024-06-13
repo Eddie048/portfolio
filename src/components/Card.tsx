@@ -15,7 +15,7 @@ const Card = ({ title, description, media_src, isVideo }: CardProps) => {
   };
 
   return (
-    <div className="relative overflow-hidden w-[400px] aspect-video group">
+    <div className="relative overflow-hidden w-[400px] aspect-video group rounded-lg">
       {isVideo ? (
         <video
           src={media_src}

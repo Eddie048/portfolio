@@ -19,7 +19,7 @@ const Home = () => {
           duration={500}
           className="group w-fit cursor-pointer my-7"
         >
-          <div className="animate-bounce text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 w-fit group-hover:bg-pink-600 group-hover:border-pink-600 group-hover:text-slate-900">
+          <div className="animate-bounce text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 w-fit group-hover:bg-pink-600 group-hover:border-pink-600 group-hover:text-slate-900 rounded-lg">
             Explore my work <IoIosArrowForward className="ml-2" />
           </div>
         </Link>
