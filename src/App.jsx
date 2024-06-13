@@ -6,10 +6,7 @@ import Projects from "./components/Projects.tsx";
 function App() {
   return (
     <div className="font-[inter]">
-      <Navbar />
       <Home />
-      <Skills/>
-      <Projects/>
     </div>
   );
 }
