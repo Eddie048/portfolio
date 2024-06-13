@@ -33,7 +33,10 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger Icon */}
-      <div onClick={() => setIsNavOpen(!isNavOpen)} className="md:hidden z-10">
+      <div
+        onClick={() => setIsNavOpen(!isNavOpen)}
+        className="md:hidden z-10 cursor-pointer"
+      >
         {isNavOpen ? <FaTimes /> : <FaBars />}
       </div>
 
