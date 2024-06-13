@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+type navProps = {
+  navList?: { name: string; id: string }[];
+};
 
-  const pageSections = [
-    { name: "Home", id: "home" },
-    { name: "Skills", id: "skills" },
-    { name: "Projects", id: "projects" },
-  ];
+const Navbar = ({ navList = [] }: navProps) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <div className="fixed w-full h-20 flex justify-between items-center px-4 z-10 bg-slate-900 text-gray-300 text-xl">
@@ -19,7 +17,7 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        {pageSections.map(({ name, id }) => (
+        {navList.map(({ name, id }) => (
           <Link
             to={id}
             key={id + "-topNav"}
@@ -48,7 +46,7 @@ const Navbar = () => {
             : "hidden"
         }
       >
-        {pageSections.map(({ name, id }) => (
+        {navList.map(({ name, id }) => (
           <Link
             to={id}
             key={id + "-mobile"}
