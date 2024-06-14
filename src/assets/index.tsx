@@ -15,6 +15,7 @@ import planet_physics_demo from "./planet-physics-demo.mov";
 import hypixel_player_tracker_demo from "./hypixel_player_tracker_output.png";
 import poker_output_3 from "./poker_output_3.png";
 import juststance_demo from "./juststance_demo.png";
+import { projectProps } from "../pages/ProjectPage";
 
 const skills = [
   { name: "Java", icon: java },
@@ -74,4 +75,8 @@ const projects = [
   },
 ];
 
-export { skills, projects };
+const projectPages: projectProps[] = [
+  { projectName: "Planet Physics", pageAddress: "planet-physics", content: [] },
+];
+
+export { skills, projects, projectPages };
