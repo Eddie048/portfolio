@@ -17,13 +17,12 @@ const Projects = () => {
           or hover the images to learn more!
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center mx-auto gap-14 mt-6">
-          {projects.map(({ title, description, media_src, isVideo }) => (
+          {projects.map(({ title, description, media_src }) => (
             <Card
               key={title}
               title={title}
               description={description}
               media_src={media_src}
-              isVideo={isVideo}
             />
           ))}
         </div>
