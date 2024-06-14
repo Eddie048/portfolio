@@ -36,47 +36,124 @@ const projects = [
     description:
       "As my first personal project early in high school, I used equations from my physics class to create an orbital mechanics simulation.",
     media_src: planet_physics_demo,
-    isVideo: true,
   },
   {
     title: "Hypixel Player Tracker",
     description:
       "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
     media_src: hypixel_player_tracker_demo,
-    isVideo: false,
   },
   {
     title: "Hospital Application",
     description:
       "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
     media_src: hospital_login,
-    isVideo: false,
   },
   {
     title: "Portfolio Website",
     description:
       "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
     media_src: website_icon,
-    isVideo: false,
   },
   {
     title: "Poker Project",
     description:
       "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
     media_src: poker_output_3,
-    isVideo: false,
   },
   {
     title: "Assorted Threading Problems",
     description:
       "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
     media_src: juststance_demo,
-    isVideo: false,
   },
 ];
 
 const projectPages: projectProps[] = [
-  { projectName: "Planet Physics", pageAddress: "planet-physics", content: [] },
+  {
+    projectName: "Planet Physics",
+    pageAddress: "planet-physics",
+    content: [
+      {
+        type: "text",
+        data: "As my first personal project early in high school, I used equations from my physics class to create an orbital mechanics simulation.",
+      },
+      {
+        type: "video",
+        data: planet_physics_demo,
+      },
+    ],
+  },
+  {
+    projectName: "Hypixel Player Tracker",
+    pageAddress: "hypixel-player-tracker",
+    content: [
+      {
+        type: "text",
+        data: "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
+      },
+      {
+        type: "image",
+        data: hypixel_player_tracker_demo,
+      },
+    ],
+  },
+  {
+    projectName: "Hospital Application",
+    pageAddress: "hospital-application",
+    content: [
+      {
+        type: "text",
+        data: "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
+      },
+      {
+        type: "image",
+        data: hospital_login,
+      },
+    ],
+  },
+  {
+    projectName: "Portfolio Website",
+    pageAddress: "portfolio-website",
+    content: [
+      {
+        type: "text",
+        data: "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
+      },
+      {
+        type: "image",
+        data: website_icon,
+      },
+    ],
+  },
+  {
+    projectName: "Poker Project",
+    pageAddress: "poker-project",
+    content: [
+      {
+        type: "text",
+        data: "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
+      },
+      {
+        type: "image",
+        data: poker_output_3,
+      },
+    ],
+  },
+  {
+    projectName: "Assorted Threading Problems",
+    pageAddress: "threading-problems",
+    content: [
+      {
+        type: "text",
+        data: "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
+      },
+      {
+        type: "image",
+        data: juststance_demo,
+      },
+    ],
+  },
 ];
 
 export { skills, projects, projectPages };

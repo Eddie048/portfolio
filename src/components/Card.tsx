@@ -4,10 +4,9 @@ type CardProps = {
   title: string;
   description: string;
   media_src: string;
-  isVideo: boolean;
 };
 
-const Card = ({ title, description, media_src, isVideo }: CardProps) => {
+const Card = ({ title, description, media_src }: CardProps) => {
   const [clicked, setClicked] = useState(false);
 
   const onClick = () => {
@@ -16,7 +15,7 @@ const Card = ({ title, description, media_src, isVideo }: CardProps) => {
 
   return (
     <div className="relative overflow-hidden w-[400px] aspect-video group rounded-lg">
-      {isVideo ? (
+      {media_src.endsWith(".mov") ? (
         <video
           src={media_src}
           controls={false}
