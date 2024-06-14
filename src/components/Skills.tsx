@@ -33,6 +33,12 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        <a
+          href="/Resume_EdwardStump.pdf"
+          className="animate-bounce text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+        >
+          View my resume!
+        </a>
       </div>
     </div>
   );
