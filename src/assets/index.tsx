@@ -112,6 +112,12 @@ const projects: project[] = [
         data: website_icon,
       },
     ],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Eddie048/portfolio",
+      },
+    ],
   },
   {
     projectTitle: "Poker Project",

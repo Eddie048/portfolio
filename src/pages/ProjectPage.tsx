@@ -24,7 +24,6 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
             {projectName}
           </h2>
           {content.map(({ type, data }) => {
-            console.log("Hello world");
             switch (type) {
               case "text":
                 return <p className="text-gray-300 text-lg">{data}</p>;
