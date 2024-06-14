@@ -15,7 +15,21 @@ import planet_physics_demo from "./planet-physics-demo.mov";
 import hypixel_player_tracker_demo from "./hypixel_player_tracker_output.png";
 import poker_output_3 from "./poker_output_3.png";
 import juststance_demo from "./juststance_demo.png";
-import { projectProps } from "../pages/ProjectPage";
+
+type project = {
+  projectTitle: string;
+  pageAddress: string;
+  description: string;
+  display_media: string;
+  content: {
+    type: "text" | "video" | "image";
+    data: string;
+  }[];
+  links?: {
+    name: string;
+    url: string;
+  }[];
+};
 
 const skills = [
   { name: "Java", icon: java },
@@ -30,49 +44,13 @@ const skills = [
   { name: "SQL", icon: sql },
 ];
 
-const projects = [
+const projects: project[] = [
   {
-    title: "Planet Physics",
+    projectTitle: "Planet Physics",
+    pageAddress: "planet-physics",
     description:
       "As my first personal project early in high school, I used equations from my physics class to create an orbital mechanics simulation.",
-    media_src: planet_physics_demo,
-  },
-  {
-    title: "Hypixel Player Tracker",
-    description:
-      "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
-    media_src: hypixel_player_tracker_demo,
-  },
-  {
-    title: "Hospital Application",
-    description:
-      "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
-    media_src: hospital_login,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
-    media_src: website_icon,
-  },
-  {
-    title: "Poker Project",
-    description:
-      "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
-    media_src: poker_output_3,
-  },
-  {
-    title: "Assorted Threading Problems",
-    description:
-      "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
-    media_src: juststance_demo,
-  },
-];
-
-const projectPages: projectProps[] = [
-  {
-    projectName: "Planet Physics",
-    pageAddress: "planet-physics",
+    display_media: planet_physics_demo,
     content: [
       {
         type: "text",
@@ -85,8 +63,11 @@ const projectPages: projectProps[] = [
     ],
   },
   {
-    projectName: "Hypixel Player Tracker",
+    projectTitle: "Hypixel Player Tracker",
     pageAddress: "hypixel-player-tracker",
+    description:
+      "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
+    display_media: hypixel_player_tracker_demo,
     content: [
       {
         type: "text",
@@ -99,8 +80,11 @@ const projectPages: projectProps[] = [
     ],
   },
   {
-    projectName: "Hospital Application",
+    projectTitle: "Hospital Application",
     pageAddress: "hospital-application",
+    description:
+      "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
+    display_media: hospital_login,
     content: [
       {
         type: "text",
@@ -113,8 +97,11 @@ const projectPages: projectProps[] = [
     ],
   },
   {
-    projectName: "Portfolio Website",
+    projectTitle: "Portfolio Website",
     pageAddress: "portfolio-website",
+    description:
+      "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
+    display_media: website_icon,
     content: [
       {
         type: "text",
@@ -127,8 +114,11 @@ const projectPages: projectProps[] = [
     ],
   },
   {
-    projectName: "Poker Project",
+    projectTitle: "Poker Project",
     pageAddress: "poker-project",
+    description:
+      "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
+    display_media: poker_output_3,
     content: [
       {
         type: "text",
@@ -141,8 +131,11 @@ const projectPages: projectProps[] = [
     ],
   },
   {
-    projectName: "Assorted Threading Problems",
+    projectTitle: "Assorted Threading Problems",
     pageAddress: "threading-problems",
+    description:
+      "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
+    display_media: juststance_demo,
     content: [
       {
         type: "text",
@@ -156,4 +149,4 @@ const projectPages: projectProps[] = [
   },
 ];
 
-export { skills, projects, projectPages };
+export { skills, projects };

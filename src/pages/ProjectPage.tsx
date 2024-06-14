@@ -2,9 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
-interface projectProps {
+type projectProps = {
   projectName: string;
-  pageAddress: string;
   content: {
     type: "text" | "image" | "video";
     data: string;
@@ -13,7 +12,7 @@ interface projectProps {
     name: string;
     url: string;
   }[];
-}
+};
 
 const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
   return (
@@ -67,4 +66,3 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
 };
 
 export default ProjectPage;
-export type { projectProps };
