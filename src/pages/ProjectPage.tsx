@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 
 type projectProps = {
   projectName: string;
@@ -48,15 +49,21 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
                 return <></>;
             }
           })}
-          <div className="flex flex-row">
+          <div className="flex flex-row gap-4">
             {links.map(({ name, url }) => (
               <Link
                 to={url}
-                className="text-xl text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+                className="text-xl text-gray-300 border-gray-300 bg-slate-700 border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
               >
                 {name}
               </Link>
             ))}
+            <Link
+              to="/"
+              className="text-xl text-gray-300 border-gray-300 bg-slate-700 flex border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+            >
+              Return to home page <IoIosArrowForward className="ml-2" />
+            </Link>
           </div>
         </div>
       </div>
