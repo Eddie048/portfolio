@@ -1,20 +1,9 @@
-import c from "./c.png";
-import css from "./css.png";
-import html from "./html.jpg";
-import java from "./java.png";
-import javascript from "./javascript.png";
-import python from "./python.webp";
-import react from "./react.webp";
-import sql from "./sql.png";
-import tailwind from "./tailwind.jpeg";
-import typescript from "./typescript.png";
-
-import hospital_login from "./hospital-app-login.png";
-import website_icon from "./website-icon.png";
-import planet_physics_demo from "./planet-physics-demo.mov";
-import hypixel_player_tracker_demo from "./hypixel_player_tracker_output.png";
-import poker_output_3 from "./poker_output_3.png";
-import juststance_demo from "./juststance_demo.png";
+import hospital_login from "./hospital-application/hospital-app-login.png";
+import website_icon from "./portfolio-website/website-icon.png";
+import planet_physics_demo from "./planet-physics/planet-physics-demo.mov";
+import hypixel_player_tracker_demo from "./hypixel-player-tracker/hypixel_player_tracker_output.png";
+import poker_output_3 from "./poker-project/poker_output_3.png";
+import juststance_demo from "./threading-problems/juststance_demo.png";
 
 type project = {
   projectTitle: string;
@@ -30,19 +19,6 @@ type project = {
     url: string;
   }[];
 };
-
-const skills = [
-  { name: "Java", icon: java },
-  { name: "C", icon: c },
-  { name: "Python", icon: python },
-  { name: "Javascript", icon: javascript },
-  { name: "HTML", icon: html },
-  { name: "CSS", icon: css },
-  { name: "Typescript", icon: typescript },
-  { name: "React", icon: react },
-  { name: "Tailwind", icon: tailwind },
-  { name: "SQL", icon: sql },
-];
 
 const projects: project[] = [
   {
@@ -155,4 +131,4 @@ const projects: project[] = [
   },
 ];
 
-export { skills, projects };
+export { projects };
