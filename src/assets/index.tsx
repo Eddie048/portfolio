@@ -46,6 +46,12 @@ const projects: project[] = [
         data: planet_physics_code,
       },
     ],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Eddie048/Planet-Physics",
+      },
+    ],
   },
   {
     projectTitle: "Hypixel Player Tracker",
@@ -101,6 +107,10 @@ const projects: project[] = [
       {
         name: "Github",
         url: "https://github.com/Eddie048/portfolio",
+      },
+      {
+        name: "Website",
+        url: "https://edwardstump.com",
       },
     ],
   },
