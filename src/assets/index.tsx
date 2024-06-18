@@ -2,9 +2,12 @@ import hospital_login from "./hospital-application/hospital-app-login.png";
 import website_icon from "./portfolio-website/website-icon.png";
 import planet_physics_demo from "./planet-physics/planet-physics-demo.mov";
 import planet_physics_code from "./planet-physics/planet-physics-code.png";
-import hypixel_player_tracker_demo from "./hypixel-player-tracker/hypixel_player_tracker_output.png";
-import poker_output_3 from "./poker-project/poker_output_3.png";
-import juststance_demo from "./threading-problems/juststance_demo.png";
+import hypixel_player_tracker_demo from "./hypixel-player-tracker/hypixel-player-tracker-output.png";
+import poker_icon from "./poker-project/poker-welcome-icon.png";
+import poker_output_1 from "./poker-project/poker-output-1.png";
+import poker_output_2 from "./poker-project/poker-output-2.png";
+import poker_output_3 from "./poker-project/poker-output-3.png";
+import juststance_demo from "./threading-problems/juststance-demo.png";
 
 type project = {
   projectTitle: string;
@@ -119,7 +122,7 @@ const projects: project[] = [
     pageAddress: "poker-project",
     description:
       "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
-    display_media: poker_output_3,
+    display_media: poker_icon,
     content: [
       {
         type: "text",
@@ -127,7 +130,21 @@ const projects: project[] = [
       },
       {
         type: "image",
+        data: poker_output_1,
+      },
+      {
+        type: "image",
+        data: poker_output_2,
+      },
+      {
+        type: "image",
         data: poker_output_3,
+      },
+    ],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Eddie048/Poker",
       },
     ],
   },
