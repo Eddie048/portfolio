@@ -7,6 +7,7 @@ import poker_icon from "./poker-project/poker-welcome-icon.png";
 import poker_output_1 from "./poker-project/poker-output-1.png";
 import poker_output_2 from "./poker-project/poker-output-2.png";
 import poker_output_3 from "./poker-project/poker-output-3.png";
+import poker_code from "./poker-project/poker-code.png";
 import juststance_demo from "./threading-problems/juststance-demo.png";
 
 type project = {
@@ -126,7 +127,15 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
+        data: "As part of a Java class, I built a poker game. This game simulates a game of 5 card draw poker against a computer opponent, complete with turning in cards, betting and raising against the computer, and scoring complicated outcomes. In fact, this scoring was my favorite part to work on. Part of the tiebreaking algorithm can be seen below, a switch statement that scores two hands against each other if the initial evaluation is tied. For example, if two hands are both deemed a full house, this logic decides which full house wins.",
+      },
+      {
+        type: "image",
+        data: poker_code,
+      },
+      {
+        type: "text",
+        data: "Early in high school, and having 9 Java files, this was the largest project I had worked on at the time. It was my first experience managing a large number of class relationships in a large object oriented project. Below is the game being played, I was lucky enough to get a flush!",
       },
       {
         type: "image",

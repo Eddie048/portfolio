@@ -20,7 +20,7 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
     <>
       <Navbar />
       <div className="w-full h-fit pt-40 pb-20">
-        <div className="max-w-[800px] mx-auto px-8 flex flex-col gap-4 h-full">
+        <div className="max-w-[800px] mx-auto px-8 flex flex-col gap-6 h-full">
           <h2 className="text-gray-300 font-bold text-xl border-b-2 border-pink-600 w-fit pr-4">
             {projectName}
           </h2>
