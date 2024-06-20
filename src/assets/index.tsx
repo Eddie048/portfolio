@@ -9,6 +9,7 @@ import poker_output_2 from "./poker-project/poker-output-2.png";
 import poker_output_3 from "./poker-project/poker-output-3.png";
 import poker_code from "./poker-project/poker-code.png";
 import juststance_demo from "./threading-problems/juststance-demo.png";
+import shueworld_demo from "./threading-problems/shueworld-demo.png";
 
 type project = {
   projectTitle: string;
@@ -166,11 +167,23 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
+        data: "Learning threading is an overwhelming task. The bugs are impossible to trace down, threads never want to work together, and deadlock seems to come out of nowhere. An operating systems class in my junior year of college was my opportunity to tackle this challenge.",
+      },
+      {
+        type: "text",
+        data: "In this first threading problem, 68 students try to jump onto a mat made up of 4 squares. The catch is that each student wants to jump between squares on the mat in a very specific order, making deadlock a possibility as two students waiting to jump to each other's squares would be waiting forever. I ensure deadlock is impossible by checking the squares the students planned to visit and ensuring there were no loops possible. To synchronize the threads together, I use condition variables and locks. Below is part of the output of the finished problem, all 68 threads running smoothly.",
       },
       {
         type: "image",
         data: juststance_demo,
+      },
+      {
+        type: "text",
+        data: "In the second problem, 3 different style of shoes want to mount a stage in order to discuss thier opinions with the general public. Unfortunately, different shoe types don't get along, so despite there being 5 microphones, only one type of shoe can be on stage at a time. This problem explored fairness, making sure that all threads were given equal chances to get on the stage. To handle concurrent threads in this context, I used semaphores. Below is part of the output of the finished problem, 50 shoes of 3 different types running together.",
+      },
+      {
+        type: "image",
+        data: shueworld_demo,
       },
     ],
   },
