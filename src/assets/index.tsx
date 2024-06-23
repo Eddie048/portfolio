@@ -36,7 +36,7 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "During high school, I was taking a physics class and a Java class at the same time. In physics, I learned about the 3 body problem, which says that in a system of just 3 gravitational objects, there is no closed form solution - there is no way to write an equation that gives the exact movements of the 3 objects. In addition, the behavior of the objects is often chaotic. Because we had just started learning about graphics in my Java class, I decided to simulate orbital motion using Java. This is a demonstartion of several objects of various mass moving around each other.",
+        data: "During high school, I was taking a physics class and a Java class at the same time. In physics, I learned about the 3 body problem, which says that in a system of just 3 gravitational objects, there is no closed form solution - there is no way to write an equation that gives the exact movements of the 3 objects. In addition, the behavior of the objects is often chaotic. Because we had just started learning about graphics in my Java class, I decided to simulate orbital motion using Java. This is a demonstration of several objects of various mass moving around each other.",
       },
       {
         type: "video",
@@ -67,11 +67,25 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
+        data: "In high school, I enjoyed playing the video game Minecraft, especially online, on a server called Hypixel. My favorite game on the server, Bedwars, routinely had players with huge skill differences matched into the same game. This made for uninteresting and one sided games. To fix this issue, I created this project, which involved teaching myself Python, API usage, image processing, and more.",
+      },
+      {
+        type: "text",
+        data: "When a screenshot is taken in game, the program detects it and scans the image to find usernames. This image reading algorithm was fully custom, taking advantage of Minecraft's pixelated font to match pixel patterns to letters. The other players' in-game statistics are then requested from the Hypixel API, the link for which is at the bottom of the page. The program then determines how threatening the players are using their statistics and displays the information. Lastly, the system displays a desktop notification with a warning if there are any particularly threatening players. Output can be seen below, an analysis of every player present in the lobby.",
       },
       {
         type: "image",
         data: hypixel_player_tracker_demo,
+      },
+    ],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Eddie048/autoHypixelProject",
+      },
+      {
+        name: "Hypixel API",
+        url: "https://https://api.hypixel.net/",
       },
     ],
   },
@@ -128,7 +142,7 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "As part of a Java class, I built a poker game. This game simulates a game of 5 card draw poker against a computer opponent, complete with turning in cards, betting and raising against the computer, and scoring complicated outcomes. In fact, this scoring was my favorite part to work on. Part of the tiebreaking algorithm can be seen below, a switch statement that scores two hands against each other if the initial evaluation is tied. For example, if two hands are both deemed a full house, this logic decides which full house wins.",
+        data: "As part of a Java class, I built a poker game. This game simulates a game of 5 card draw poker against a computer opponent, complete with turning in cards, betting and raising against the computer, and scoring complicated outcomes. In fact, this scoring was my favorite part to work on. Part of the tie breaking algorithm can be seen below, a switch statement that scores two hands against each other if the initial evaluation is tied. For example, if two hands are both deemed a full house, this logic decides which full house wins.",
       },
       {
         type: "image",
@@ -179,7 +193,7 @@ const projects: project[] = [
       },
       {
         type: "text",
-        data: "In the second problem, 3 different style of shoes want to mount a stage in order to discuss thier opinions with the general public. Unfortunately, different shoe types don't get along, so despite there being 5 microphones, only one type of shoe can be on stage at a time. This problem explored fairness, making sure that all threads were given equal chances to get on the stage. To handle concurrent threads in this context, I used semaphores. Below is part of the output of the finished problem, 50 shoes of 3 different types running together.",
+        data: "In the second problem, 3 different styles of shoes want to mount a stage in order to discuss their opinions with the general public. Unfortunately, different shoe types don't get along, so despite there being 5 microphones, only one type of shoe can be on stage at a time. This problem explored fairness, making sure that all threads were given equal chances to get on the stage. To handle concurrent threads in this context, I used semaphores. Below is part of the output of the finished problem, 50 shoes of 3 different types running together.",
       },
       {
         type: "image",
