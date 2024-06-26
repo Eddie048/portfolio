@@ -105,7 +105,7 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "This project was my introduction to software engineering as part of a large team. Me and 9 other people worked together as part of a class to create a mock application for Brigham and Women's hospital. We created the project primarily using Java, with JavaFX for graphics and user interfaces. We used Figma to design pages before they were implemented in code. We used SQL to communicate with a postgres backend. We used git and github for version control, and github actions to automatically test branches before merges to ensure our application didn't break. We used the Agile Methodology to coordinate work between the 10 members of the group with each sprint lasting one week of our 7 week course. We used various design patterns to aid with the most complex features. By the end of the project, we had 14 database tables, over 100 Java classes and interfaces, and numerous FXML and CSS files. Below are screenshots of parts of the finished application and descriptions of some of its functionality.",
+        data: "This project was my introduction to software engineering as part of a large team. Me and 9 other people worked together as part of a class to create a mock application for Brigham and Women's hospital. We created the project primarily using Java, with JavaFX for graphics and user interfaces. We used Figma to design pages before they were implemented in code. We used SQL to communicate with a pPstgres backend. We used Git and Github for version control, and Github actions to automatically test branches before merges to ensure our application didn't break. We used the Agile Methodology to coordinate work between the 10 members of the group with each sprint lasting one week of our 7 week course. We used various design patterns to aid with the most complex features. By the end of the project, we had 14 database tables, over 100 Java classes and interfaces, and numerous FXML and CSS files. Below are screenshots of parts of the finished application and descriptions of some of its functionality.",
       },
       {
         type: "text",
@@ -178,7 +178,7 @@ const projects: project[] = [
     content: [
       {
         type: "text",
-        data: "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
+        data: "This portfolio website is another one of my personal projects, my first major step into web development and hosting. I used React, TailwindCSS for styling, and Vercel for deployment. Feel free to explore the source code on Github, linked at the bottom of the page.",
       },
       {
         type: "image",
