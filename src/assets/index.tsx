@@ -100,16 +100,72 @@ const projects: project[] = [
     projectTitle: "Hospital Application",
     pageAddress: "hospital-application",
     description:
-      "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
+      "This project was a mock service request manager and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
     display_media: hospital_login,
     content: [
       {
         type: "text",
-        data: "This project was a mock service request manager  and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
+        data: "This project was my introduction to software engineering as part of a large team. Me and 9 other people worked together as part of a class to create a mock application for Brigham and Women's hospital. We created the project primarily using Java, with JavaFX for graphics and user interfaces. We used Figma to design pages before they were implemented in code. We used SQL to communicate with a postgres backend. We used git and github for version control, and github actions to automatically test branches before merges to ensure our application didn't break. We used the Agile Methodology to coordinate work between the 10 members of the group with each sprint lasting one week of our 7 week course. We used various design patterns to aid with the most complex features. By the end of the project, we had 14 database tables, over 100 Java classes and interfaces, and numerous FXML and CSS files. Below are screenshots of parts of the finished application and descriptions of some of its functionality.",
+      },
+      {
+        type: "text",
+        data: "This is the login page for the application. We implemented an account management system with different permissions, settings local to the user, and the assignment of different service requests, which will be explained in the following sections.",
       },
       {
         type: "image",
         data: hospital_login,
+      },
+      {
+        type: "text",
+        data: "This is the home page of the hospital. It welcomes the user as well as informing them of any unfulfilled service requests currently assigned to them, as well as service requests that they've submitted.",
+      },
+      {
+        type: "image",
+        data: hospital_home_page,
+      },
+      {
+        type: "text",
+        data: "One of the challenges we faced was displaying a map of the hospital in our application. The hospital has 5 floors and hundreds of rooms, hallways, elevators, and staircases. Each location and connection is stored in the database. In addition to this, it is possible for an admin to change the names of rooms or move them as the hospital reorganizes its operations.",
+      },
+      {
+        type: "image",
+        data: hospital_map_page,
+      },
+      {
+        type: "text",
+        data: "In addition to visual maps, users can also use the application to find their way around the hospital. By entering a start and end location, a path is shown through the hospital, even as it winds its way through the floors. We even allow the user to pick different algorithms to search with, just for fun (Even though some of the algorithms are slower and likely to give an unnecessarily long path).",
+      },
+      {
+        type: "image",
+        data: hospital_pathfinding_page,
+      },
+      {
+        type: "text",
+        data: "These pages allow users to submit service requests. Service requests vary in nature, but include requests for conference room reservations, meal deliveries, flower deliveries, movie rentals, and more. Service requests are stored in the database along with assignee, initiator, date, room and more to ensure its completion. Below are my three favorite service request pages.",
+      },
+      {
+        type: "image",
+        data: hospital_flower_page,
+      },
+      {
+        type: "image",
+        data: hospital_conference_page,
+      },
+      {
+        type: "image",
+        data: hospital_meal_page,
+      },
+      {
+        type: "text",
+        data: "Lastly, this is a page for administrators to manage all service requests in the system. They can view, modify, and delete any service request. They can also filter service requests by assignee or completion status.",
+      },
+      {
+        type: "image",
+        data: hospital_service_page,
+      },
+      {
+        type: "text",
+        data: "Unfortunately, due to the nature of the project, the source code is not available on Github, but feel free to reach out if you are interested in more information.",
       },
     ],
   },
