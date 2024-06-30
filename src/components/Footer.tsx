@@ -3,7 +3,7 @@ import { socials } from "../assets/social-icons";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-500 w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
+    <div className="bg-primary-light w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
       {socials.map(({ name, link, icon }) => (
         <a className="flex flex-col" href={link} key={name}>
           <img
@@ -11,9 +11,7 @@ const Footer = () => {
             src={icon}
             alt={name + " icon"}
           />
-          <p className="sm:visible invisible text-slate-900 sm:text-lg text-center">
-            {name}
-          </p>
+          <p className="sm:visible invisible sm:text-lg text-center">{name}</p>
         </a>
       ))}
     </div>

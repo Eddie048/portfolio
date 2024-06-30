@@ -22,13 +22,13 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
       <Navbar />
       <div className="w-full h-fit pt-40 pb-20">
         <div className="max-w-[800px] mx-auto px-8 flex flex-col gap-6 h-full">
-          <h2 className="text-gray-300 font-bold text-xl border-b-2 border-pink-600 w-fit pr-4">
+          <h2 className="text-gray font-bold text-xl border-b-2 border-secondary w-fit pr-4">
             {projectName}
           </h2>
           {content.map(({ type, data }) => {
             switch (type) {
               case "text":
-                return <p className="text-gray-300 text-lg">{data}</p>;
+                return <p className="text-gray text-lg">{data}</p>;
               case "image":
                 return (
                   <img
@@ -54,14 +54,14 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
             {links.map(({ name, url }) => (
               <Link
                 to={url}
-                className="text-xl text-gray-300 border-gray-300 bg-slate-700 border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+                className="text-xl text-gray border-gray bg-primary-medium border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
               >
                 {name}
               </Link>
             ))}
             <Link
               to="/"
-              className="text-xl text-gray-300 border-gray-300 bg-slate-700 flex border-2 items-center px-6 py-3 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+              className="text-xl text-gray border-gray bg-primary-medium flex border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
             >
               Return to home page <IoIosArrowForward className="ml-2" />
             </Link>

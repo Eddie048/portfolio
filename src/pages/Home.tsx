@@ -17,13 +17,13 @@ const Home = () => {
   return (
     <>
       <Navbar navList={pageSections} />
-      <div id="home" className="w-full h-screen bg-slate-900">
+      <div id="home" className="w-full h-screen">
         <div className="max-w-[1000px] mx-auto px-14 flex flex-col justify-center h-full">
-          <p className="text-gray-300 font-bold text-xl">Hello, my name is</p>
-          <h1 className="sm:text-7xl xs text-5xl font-bold text-pink-600 py-2">
+          <p className="text-gray font-bold text-xl">Hello, my name is</p>
+          <h1 className="sm:text-7xl xs text-5xl font-bold text-secondary py-2">
             Eddie Stump
           </h1>
-          <h2 className="text-2xl text-sky-400">
+          <h2 className="text-2xl text-accent">
             I'm a Software Engineer and Web Developer
           </h2>
           <Link
@@ -32,7 +32,7 @@ const Home = () => {
             duration={500}
             className="group w-fit cursor-pointer my-7"
           >
-            <div className="animate-bounce text-xl bg-slate-700 text-gray-300 border-gray-300 flex border-2 items-center px-6 py-3 w-fit group-hover:bg-pink-600 group-hover:border-pink-600 group-hover:text-slate-900 rounded-lg">
+            <div className="animate-bounce text-xl bg-primary-medium text-gray border-gray flex border-2 items-center px-6 py-3 w-fit group-hover:bg-secondary group-hover:border-secondary group-hover:text-primary rounded-lg">
               Explore my work <IoIosArrowForward className="ml-2" />
             </div>
           </Link>

@@ -6,13 +6,13 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full h-fit min-h-screen bg-slate-900 content-center py-24"
+      className="w-full h-fit min-h-screen content-center py-24"
     >
       <div className="max-w-[1000px] mx-auto px-14 flex flex-col justify-center h-full gap-3">
-        <h2 className="text-gray-300 font-bold text-xl border-b-2 border-pink-600 w-fit pr-4">
+        <h2 className="text-gray font-bold text-xl border-b-2 border-secondary w-fit pr-4">
           My Projects
         </h2>
-        <p className="text-gray-300 text-lg">
+        <p className="text-gray text-lg">
           Explore some of the projects I've worked on over the years. Click/tap
           or hover the images to learn more!
         </p>

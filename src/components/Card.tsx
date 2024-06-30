@@ -30,7 +30,7 @@ const Card = ({
       className="w-[400px] group rounded-lg overflow-hidden"
       onClick={onClick}
     >
-      <p className="text-gray-300 text-xl font-bold bg-pink-600 px-4 py-2">
+      <p className="text-gray text-xl font-bold bg-secondary px-4 py-2">
         {title}
       </p>
       <div className="relative overflow-hidden aspect-video ">
@@ -46,15 +46,15 @@ const Card = ({
           <img src={media_src} alt={title} />
         )}
         <div
-          className={`absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-gradient-to-b from-pink-600 from-40% px-4 pt-3 ${
+          className={`absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-gradient-to-b from-secondary from-40% px-4 pt-3 ${
             clicked && "transform-none"
           }`}
         >
-          <p className="text-gray-300 text-lg">{description}</p>
+          <p className="text-gray text-lg">{description}</p>
           <div className="flex flex-row gap-3">
             <Link
               to={pageAddress}
-              className="text-lg text-gray-300 border-gray-300 bg-slate-700 border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+              className="text-lg text-gray border-gray bg-primary-medium border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
             >
               Learn More
             </Link>
@@ -64,7 +64,7 @@ const Card = ({
                 <Link
                   to={url}
                   key={name}
-                  className="text-lg text-gray-300 border-gray-300 bg-slate-700 border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
+                  className="text-lg text-gray border-gray bg-primary-medium border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
                 >
                   {name}
                 </Link>
