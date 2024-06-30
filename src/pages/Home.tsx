@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Navbar navList={pageSections} />
       <div id="home" className="w-full h-screen bg-slate-900">
-        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+        <div className="max-w-[1000px] mx-auto px-14 flex flex-col justify-center h-full">
           <p className="text-gray-300 font-bold text-xl">Hello, my name is</p>
           <h1 className="sm:text-7xl xs text-5xl font-bold text-pink-600 py-2">
             Eddie Stump
