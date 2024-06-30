@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 const Home = () => {
   const pageSections = [
@@ -38,6 +40,8 @@ const Home = () => {
       </div>
       <Skills />
       <Projects />
+      <Footer />
+      <Contact />
     </>
   );
 };

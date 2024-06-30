@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
+import Footer from "../components/Footer";
 
 type projectProps = {
   projectName: string;
@@ -67,6 +68,7 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

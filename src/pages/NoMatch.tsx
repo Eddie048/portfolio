@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const NoMatch = () => {
   return (
@@ -19,6 +20,7 @@ const NoMatch = () => {
           Return to Home Page <IoIosArrowForward className="ml-2" />
         </Link>
       </div>
+      <Footer />
     </>
   );
 };
