@@ -63,6 +63,7 @@ const Card = ({
               .map(({ name, url }) => (
                 <Link
                   to={url}
+                  key={name}
                   className="text-lg text-gray-300 border-gray-300 bg-slate-700 border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-pink-600 hover:border-pink-600 hover:text-slate-900 rounded-lg"
                 >
                   {name}

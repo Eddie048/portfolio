@@ -13,6 +13,7 @@ function App() {
         {projects.map(({ projectTitle, pageAddress, content, links }) => (
           <Route
             path={pageAddress}
+            key={projectTitle}
             element={
               <ProjectPage
                 projectName={projectTitle}
