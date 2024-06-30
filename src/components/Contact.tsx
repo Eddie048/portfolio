@@ -6,6 +6,7 @@ const Contact = () => {
     <div className="fixed left-0 bottom-1/2 flex flex-col">
       {socials.map(({ name, icon, link }) => (
         <a
+          key={name}
           href={link}
           className="flex-row bg-slate-500 hidden sm:flex items-center p-1 pl-5 -translate-x-24 hover:transform-none duration-300 transition-transform "
         >
