@@ -30,11 +30,9 @@ const Home = () => {
             to="projects"
             smooth="true"
             duration={500}
-            className="group w-fit cursor-pointer my-7"
+            className="animate-bounce button w-fit cursor-pointer my-7"
           >
-            <div className="animate-bounce text-xl bg-primary-medium text-gray border-gray flex border-2 items-center px-6 py-3 w-fit group-hover:bg-secondary group-hover:border-secondary group-hover:text-primary rounded-lg">
-              Explore my work <IoIosArrowForward className="ml-2" />
-            </div>
+            Explore my work <IoIosArrowForward className="ml-2" />
           </Link>
         </div>
       </div>

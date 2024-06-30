@@ -52,20 +52,13 @@ const Card = ({
         >
           <p className="text-gray text-lg">{description}</p>
           <div className="flex flex-row gap-3">
-            <Link
-              to={pageAddress}
-              className="text-lg text-gray border-gray bg-primary-medium border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
-            >
+            <Link to={pageAddress} className=" mt-1 w-fit button-small">
               Learn More
             </Link>
             {links
               .filter(({ url }) => url.includes("github.com"))
               .map(({ name, url }) => (
-                <Link
-                  to={url}
-                  key={name}
-                  className="text-lg text-gray border-gray bg-primary-medium border-2 items-center px-3 py-1 mt-1 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
-                >
+                <Link to={url} key={name} className="mt-1 button-small">
                   {name}
                 </Link>
               ))}

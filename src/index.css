@@ -24,3 +24,37 @@
 html {
   @apply bg-primary;
 }
+
+.button {
+  @apply bg-primary-medium;
+  @apply text-gray;
+  @apply border-gray;
+  @apply flex;
+  @apply border-2;
+  @apply items-center;
+  @apply w-fit;
+  @apply hover:bg-secondary;
+  @apply hover:border-secondary;
+  @apply hover:text-primary;
+  @apply rounded-lg;
+  @apply text-xl;
+  @apply px-6;
+  @apply py-3;
+}
+
+.button-small {
+  @apply bg-primary-medium;
+  @apply text-gray;
+  @apply border-gray;
+  @apply flex;
+  @apply border-2;
+  @apply items-center;
+  @apply w-fit;
+  @apply hover:bg-secondary;
+  @apply hover:border-secondary;
+  @apply hover:text-primary;
+  @apply rounded-lg;
+  @apply text-lg;
+  @apply px-3;
+  @apply py-1;
+}

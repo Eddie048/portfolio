@@ -28,10 +28,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <a
-          href="/Resume_EdwardStump.pdf"
-          className="animate-bounce text-xl text-gray border-gray bg-primary-medium border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
-        >
+        <a href="/Resume_EdwardStump.pdf" className="animate-bounce button">
           View my resume!
         </a>
       </div>

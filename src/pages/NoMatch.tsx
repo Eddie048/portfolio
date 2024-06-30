@@ -13,14 +13,13 @@ const NoMatch = () => {
           404 :(
         </h1>
         <h2 className="text-2xl text-accent m-5">404 - Page not found</h2>
-        <Link
-          to="/"
-          className="text-xl text-gray border-gray bg-primary-medium flex border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg mx-auto justify-center"
-        >
+        <Link to="/" className="button mx-auto">
           Return to Home Page <IoIosArrowForward className="ml-2" />
         </Link>
+        <div className="fixed bottom-0 w-full">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   );
 };

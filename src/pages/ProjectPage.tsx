@@ -52,17 +52,11 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
           })}
           <div className="flex flex-row gap-4">
             {links.map(({ name, url }) => (
-              <Link
-                to={url}
-                className="text-xl text-gray border-gray bg-primary-medium border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
-              >
+              <Link to={url} className="button">
                 {name}
               </Link>
             ))}
-            <Link
-              to="/"
-              className="text-xl text-gray border-gray bg-primary-medium flex border-2 items-center px-6 py-3 w-fit hover:bg-secondary hover:border-secondary hover:text-primary rounded-lg"
-            >
+            <Link to="/" className="button">
               Return to home page <IoIosArrowForward className="ml-2" />
             </Link>
           </div>
