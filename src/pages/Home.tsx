@@ -6,21 +6,30 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import profile_picture from "../assets/profilePicture.png";
 
 const Home = () => {
   const pageSections = [
     { name: "Home", id: "home" },
-    { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
+    { name: "Skills", id: "skills" },
   ];
 
   return (
     <>
       <Navbar navList={pageSections} />
-      <div id="home" className="w-full h-screen">
-        <div className="max-w-[1000px] mx-auto px-14 flex flex-col justify-center h-full">
+      <div
+        id="home"
+        className="flex flex-col md:flex-row py-28 mx-auto justify-center px-14 gap-10"
+      >
+        <img
+          src={profile_picture}
+          alt="Picture of Eddie"
+          className="h-[300px] mx-auto md:mx-0"
+        />
+        <div className="flex flex-col justify-center h-full">
           <p className="text-gray font-bold text-xl">Hello, my name is</p>
-          <h1 className="sm:text-7xl xs text-5xl font-bold text-secondary py-2">
+          <h1 className="lg:text-7xl text-5xl font-bold text-secondary py-2">
             Eddie Stump
           </h1>
           <h2 className="text-2xl text-accent">
@@ -36,8 +45,8 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <Skills />
       <Projects />
+      <Skills />
       <Footer />
       <Contact />
     </>
