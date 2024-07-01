@@ -23,9 +23,9 @@ const Navbar = ({ navList = [] }: navProps) => {
             key={id + "-topNav"}
             smooth="true"
             duration={500}
-            className="px-4 h-20 cursor-pointer hover:bg-primary-medium content-center"
+            className="px-4 h-20 cursor-pointer hover:bg-primary-medium content-center items-center flex"
           >
-            {name}
+            <p>{name}</p>
           </Link>
         ))}
       </ul>
