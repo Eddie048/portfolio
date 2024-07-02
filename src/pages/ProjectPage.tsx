@@ -25,13 +25,13 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
         {content.map(({ type, data }) => {
           switch (type) {
             case "text":
-              return <p className="text-text text-lg">{data}</p>;
+              return <p className="text-text text-lg sm:px-10">{data}</p>;
             case "image":
               return (
                 <img
                   src={data}
                   alt={"Image showing off the " + projectName + "project."}
-                  className="rounded-lg shadow-text shadow-md mx-auto max-w-[600px] h-full"
+                  className="project-media"
                 />
               );
             case "video":
@@ -42,20 +42,20 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
                   autoPlay={true}
                   loop={true}
                   muted={true}
-                  className="rounded-lg shadow-text shadow-md mx-auto max-w-[600px] h-full"
+                  className="project-media"
                 />
               );
             default:
               return <></>;
           }
         })}
-        <div className="flex flex-row gap-4">
+        <div className="flex md:flex-row flex-col gap-4">
           {links.map(({ name, url }) => (
-            <Link to={url} className="button">
+            <Link to={url} className="button mx-auto md:mx-0">
               {name}
             </Link>
           ))}
-          <Link to="/" className="button">
+          <Link to="/" className="button mx-auto md:mx-0">
             Return to home page <IoIosArrowForward className="ml-2" />
           </Link>
         </div>

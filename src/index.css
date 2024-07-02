@@ -72,3 +72,12 @@ html {
   @apply bg-background-secondary;
   @apply rounded-lg;
 }
+
+.project-media {
+  @apply rounded-lg;
+  @apply shadow-text;
+  @apply shadow-md;
+  @apply md:max-w-[600px];
+  @apply h-full;
+  @apply mx-auto;
+}
