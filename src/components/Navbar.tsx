@@ -43,7 +43,7 @@ const Navbar = ({ navList = [] }: navProps) => {
       <ul
         className={
           isNavOpen
-            ? "md:hidden absolute top-0 left-0 w-full h-screen bg-primary justify-center items-center flex flex-col"
+            ? "md:hidden absolute top-0 left-0 w-full h-screen bg-background-secondary justify-center items-center flex flex-col"
             : "hidden"
         }
       >
@@ -53,6 +53,7 @@ const Navbar = ({ navList = [] }: navProps) => {
             key={id + "-mobile"}
             smooth="true"
             duration={500}
+            offset={-150}
             onClick={() => setIsNavOpen(false)}
             className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl"
           >
