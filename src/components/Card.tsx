@@ -27,30 +27,34 @@ const Card = ({
 
   return (
     <div
-      className="w-[400px] group rounded-lg overflow-hidden"
+      className="w-[400px] group rounded-lg bg-background-secondary p-4 shadow-accent shadow-md"
       onClick={onClick}
     >
-      <p className="text-gray text-xl font-bold bg-secondary px-4 py-2">
-        {title}
-      </p>
-      <div className="relative overflow-hidden aspect-video ">
-        {media_src.endsWith(".mov") ? (
-          <video
-            src={media_src}
-            controls={false}
-            autoPlay={true}
-            loop={true}
-            muted={true}
-          />
-        ) : (
-          <img src={media_src} alt={title} />
-        )}
+      <p className="text-text text-xl font-bold pb-2">{title}</p>
+      <div className="relative overflow-hidden aspect-video rounded-lg">
         <div
-          className={`absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-gradient-to-b from-secondary from-40% px-4 pt-3 ${
+          className={`group-hover:translate-y-full transition-transform duration-700 ${
+            clicked && "translate-y-full"
+          }`}
+        >
+          {media_src.endsWith(".mov") ? (
+            <video
+              src={media_src}
+              controls={false}
+              autoPlay={true}
+              loop={true}
+              muted={true}
+            />
+          ) : (
+            <img src={media_src} alt={title} />
+          )}
+        </div>
+        <div
+          className={`absolute top-0 h-full -translate-y-full group-hover:transform-none duration-700 transition-transform bg-background-secondary from-40% px-4 pt-3 ${
             clicked && "transform-none"
           }`}
         >
-          <p className="text-gray text-lg">{description}</p>
+          <p className="text-text text-lg">{description}</p>
           <div className="flex flex-row gap-3">
             <Link to={pageAddress} className=" mt-1 w-fit button-small">
               Learn More

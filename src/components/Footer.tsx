@@ -3,7 +3,7 @@ import { socials } from "../assets/social-icons";
 
 const Footer = () => {
   return (
-    <div className="bg-primary-light w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
+    <div className="bg-background-secondary w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
       {socials.map(({ name, link, icon }) => (
         <a className="flex flex-col" href={link} key={name}>
           <img

@@ -20,46 +20,44 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-fit pt-40 pb-20">
-        <div className="max-w-[800px] mx-auto px-8 flex flex-col gap-6 h-full">
-          <h2 className="text-gray font-bold text-xl border-b-2 border-secondary w-fit pr-4">
-            {projectName}
-          </h2>
-          {content.map(({ type, data }) => {
-            switch (type) {
-              case "text":
-                return <p className="text-gray text-lg">{data}</p>;
-              case "image":
-                return (
-                  <img
-                    src={data}
-                    alt={"Image showing off the " + projectName + "project."}
-                  />
-                );
-              case "video":
-                return (
-                  <video
-                    src={data}
-                    controls={false}
-                    autoPlay={true}
-                    loop={true}
-                    muted={true}
-                  />
-                );
-              default:
-                return <></>;
-            }
-          })}
-          <div className="flex flex-row gap-4">
-            {links.map(({ name, url }) => (
-              <Link to={url} className="button">
-                {name}
-              </Link>
-            ))}
-            <Link to="/" className="button">
-              Return to home page <IoIosArrowForward className="ml-2" />
+      <div className="page-section flex flex-col gap-6 mt-32">
+        <h2 className="title">{projectName}</h2>
+        {content.map(({ type, data }) => {
+          switch (type) {
+            case "text":
+              return <p className="text-text text-lg">{data}</p>;
+            case "image":
+              return (
+                <img
+                  src={data}
+                  alt={"Image showing off the " + projectName + "project."}
+                  className="rounded-lg shadow-text shadow-md mx-auto max-w-[600px] h-full"
+                />
+              );
+            case "video":
+              return (
+                <video
+                  src={data}
+                  controls={false}
+                  autoPlay={true}
+                  loop={true}
+                  muted={true}
+                  className="rounded-lg shadow-text shadow-md mx-auto max-w-[600px] h-full"
+                />
+              );
+            default:
+              return <></>;
+          }
+        })}
+        <div className="flex flex-row gap-4">
+          {links.map(({ name, url }) => (
+            <Link to={url} className="button">
+              {name}
             </Link>
-          </div>
+          ))}
+          <Link to="/" className="button">
+            Return to home page <IoIosArrowForward className="ml-2" />
+          </Link>
         </div>
       </div>
       <Footer />

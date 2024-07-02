@@ -10,7 +10,7 @@ const Navbar = ({ navList = [] }: navProps) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="fixed w-full h-20 flex justify-between items-center px-4 z-10 bg-primary text-gray text-xl">
+    <div className="fixed w-full h-16 flex justify-between items-center px-4 z-10 bg-background-secondary text-text text-xl top-0">
       <a className="font-bold text-2xl content-center" href="/">
         Edward Stump
       </a>
@@ -23,7 +23,8 @@ const Navbar = ({ navList = [] }: navProps) => {
             key={id + "-topNav"}
             smooth="true"
             duration={500}
-            className="px-4 h-20 cursor-pointer hover:bg-primary-medium content-center items-center flex"
+            offset={-150}
+            className="px-4 h-16 cursor-pointer content-center items-center flex"
           >
             <p>{name}</p>
           </Link>
@@ -53,7 +54,7 @@ const Navbar = ({ navList = [] }: navProps) => {
             smooth="true"
             duration={500}
             onClick={() => setIsNavOpen(false)}
-            className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl hover:bg-primary-medium"
+            className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl"
           >
             {name}
           </Link>
