@@ -7,7 +7,7 @@ import python from "./python.webp";
 import react from "./react.webp";
 import sql from "./sql.png";
 import tailwind from "./tailwind.jpeg";
-import typescript from "./typescript.png";
+import typescript from "./typescript.svg";
 
 const skills = [
   { name: "Java", icon: java },
