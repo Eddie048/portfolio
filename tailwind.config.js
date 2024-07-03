@@ -5,7 +5,10 @@ import colors from "tailwindcss/colors";
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   colors: {
-    accent: colors.sky[300],
+    accent: {
+      DEFAULT: colors.sky[300],
+      dark: colors.sky[400],
+    },
     white: colors.white,
     background: {
       DEFAULT: colors.gray[200],

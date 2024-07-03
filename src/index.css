@@ -17,28 +17,32 @@ body {
 .button {
   @apply text-text;
   @apply border-accent;
+  @apply bg-accent;
   @apply flex;
   @apply border-2;
   @apply items-center;
   @apply w-fit;
-  @apply hover:bg-accent;
-  @apply rounded-lg;
+  @apply hover:bg-accent-dark;
+  @apply hover:border-accent-dark;
+  @apply rounded-full;
   @apply text-xl;
-  @apply px-6;
-  @apply py-3;
+  @apply px-8;
+  @apply py-2;
 }
 
 .button-small {
   @apply text-text;
   @apply border-accent;
+  @apply bg-accent;
   @apply flex;
   @apply border-2;
   @apply items-center;
   @apply w-fit;
-  @apply hover:bg-accent;
-  @apply rounded-lg;
+  @apply hover:bg-accent-dark;
+  @apply hover:border-accent-dark;
+  @apply rounded-full;
   @apply text-lg;
-  @apply px-3;
+  @apply px-4;
   @apply py-1;
 }
 
