@@ -20,6 +20,9 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
   return (
     <>
       <Navbar />
+
+      {/* Placeholder to ensure body element starts at the top of the page, so the page is colored correctly */}
+      <div className="w-1 h-1"></div>
       <div className="page-section flex flex-col gap-6 mt-32">
         <h2 className="title">{projectName}</h2>
         {content.map(({ type, data }) => {
