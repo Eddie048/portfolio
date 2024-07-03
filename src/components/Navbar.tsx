@@ -34,7 +34,9 @@ const Navbar = ({ navList = [] }: navProps) => {
       {/* Hamburger Icon */}
       <div
         onClick={() => setIsNavOpen(!isNavOpen)}
-        className="md:hidden z-10 cursor-pointer"
+        className={`md:hidden z-10 cursor-pointer ${
+          navList.length <= 0 && "hidden"
+        }`}
       >
         {isNavOpen ? <FaTimes /> : <FaBars />}
       </div>
