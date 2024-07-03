@@ -17,6 +17,9 @@ const Home = () => {
   return (
     <>
       <Navbar navList={pageSections} />
+
+      {/* Placeholder to ensure body element starts at the top of the page, so the page is colored correctly */}
+      <div className="w-1 h-1"></div>
       <div
         id="home"
         className="page-section flex flex-col md:flex-row gap-10 mt-32"
