@@ -9,10 +9,12 @@ type projectProps = {
   content: {
     type: "text" | "image" | "video";
     data: string;
+    id: number;
   }[];
   links?: {
     name: string;
     url: string;
+    id: number;
   }[];
 };
 
@@ -23,13 +25,18 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
       <div className="flex flex-col sm:px-6 px-2">
         <div className="page-section flex flex-col gap-6 mt-32">
           <h2 className="title">{projectName}</h2>
-          {content.map(({ type, data }) => {
+          {content.map(({ type, data, id }) => {
             switch (type) {
               case "text":
-                return <p className="text-text">{data}</p>;
+                return (
+                  <p key={id} className="text-text">
+                    {data}
+                  </p>
+                );
               case "image":
                 return (
                   <img
+                    key={id}
                     src={data}
                     alt={"Image showing off the " + projectName + "project."}
                     className="project-media"
@@ -38,6 +45,7 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
               case "video":
                 return (
                   <video
+                    key={id}
                     src={data}
                     controls={false}
                     autoPlay={true}
@@ -51,12 +59,12 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
             }
           })}
           <div className="flex md:flex-row flex-col gap-4">
-            {links.map(({ name, url }) => (
-              <Link to={url} className="button mx-auto md:mx-0">
+            {links.map(({ name, url, id }) => (
+              <Link key={id} to={url} className="button mx-auto md:mx-0">
                 {name}
               </Link>
             ))}
-            <Link to="/" className="button mx-auto md:mx-0">
+            <Link key={-1} to="/" className="button mx-auto md:mx-0">
               Return to home page <IoIosArrowForward className="ml-2" />
             </Link>
           </div>
