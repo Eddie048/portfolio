@@ -13,6 +13,7 @@ export const theme = {
     background: {
       DEFAULT: colors.gray[200],
       secondary: colors.white,
+      hover: colors.gray[100],
     },
     text: colors.black,
   },

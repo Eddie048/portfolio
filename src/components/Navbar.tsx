@@ -16,7 +16,7 @@ const Navbar = ({ navList = [] }: navProps) => {
       </a>
 
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <div className="hidden md:flex">
         {navList.map(({ name, id }) => (
           <Link
             to={id}
@@ -24,12 +24,12 @@ const Navbar = ({ navList = [] }: navProps) => {
             smooth="true"
             duration={500}
             offset={-150}
-            className="px-4 h-16 cursor-pointer content-center items-center flex"
+            className="px-4 h-16 cursor-pointer content-center items-center flex hover:bg-background-hover"
           >
             <p>{name}</p>
           </Link>
         ))}
-      </ul>
+      </div>
 
       {/* Hamburger Icon */}
       <div
@@ -40,7 +40,7 @@ const Navbar = ({ navList = [] }: navProps) => {
       </div>
 
       {/* Mobile menu */}
-      <ul
+      <div
         className={
           isNavOpen
             ? "md:hidden absolute top-0 left-0 w-full h-screen bg-background-secondary justify-center items-center flex flex-col"
@@ -55,12 +55,12 @@ const Navbar = ({ navList = [] }: navProps) => {
             duration={500}
             offset={-150}
             onClick={() => setIsNavOpen(false)}
-            className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl"
+            className="px-4 cursor-pointer w-3/4 text-center py-6 text-4xl hover:bg-background-hover"
           >
             {name}
           </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
