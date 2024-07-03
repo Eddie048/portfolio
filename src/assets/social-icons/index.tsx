@@ -1,5 +1,5 @@
 import email from "./email.svg";
-import resume from "./resume.svg";
+import resume from "./resume.png";
 import linkedin from "./linkedin.png";
 import github from "./github.svg";
 
