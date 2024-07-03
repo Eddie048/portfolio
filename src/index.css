@@ -42,9 +42,9 @@ body {
   @apply hover:bg-accent-dark;
   @apply hover:border-accent-dark;
   @apply rounded-full;
-  @apply text-lg;
+  @apply lg:text-lg;
   @apply px-4;
-  @apply py-1;
+  @apply lg:py-1 py-0.5;
 }
 
 .title {
@@ -61,10 +61,9 @@ body {
   @apply max-w-[1000px];
   @apply w-full;
   @apply mx-auto;
-  @apply sm:p-10;
-  @apply p-5;
+  @apply p-4 sm:p-10;
   @apply h-full;
-  @apply mb-24;
+  @apply sm:mb-24 mb-16;
   @apply bg-background-secondary;
   @apply rounded-lg;
 }

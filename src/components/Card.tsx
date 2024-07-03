@@ -29,8 +29,8 @@ const Card = ({ title, description, media_src, pageAddress }: CardProps) => {
           )}
         </div>
         <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1">
-          <p className="text-text sm:text-lg text-base">{description}</p>
-          <p className="sm:mt-3 mt-1 button-small">Click to learn more!</p>
+          <p className="text-text lg:text-lg text-base">{description}</p>
+          <p className="lg:mt-3 mt-1 button-small">Click to learn more!</p>
         </div>
       </div>
     </a>

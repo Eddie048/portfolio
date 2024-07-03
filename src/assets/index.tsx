@@ -275,7 +275,7 @@ const projects: project[] = [
     ],
   },
   {
-    projectTitle: "Assorted Threading Problems",
+    projectTitle: "Threading Problems",
     pageAddress: "threading-problems",
     description:
       "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",

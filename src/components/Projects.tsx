@@ -10,7 +10,7 @@ const Projects = () => {
         Explore some of the projects I've worked on over the years. Click, tap,
         or hover on the images to explore.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center mx-auto gap-14 mt-6">
+      <div className="grid grid-cols-1 min-[815px]:grid-cols-2 justify-items-center mx-auto gap-6 lg:gap-14 mt-6">
         {projects.map(
           ({ projectTitle, description, display_media, pageAddress }) => (
             <Card
