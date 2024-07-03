@@ -4,8 +4,25 @@ import NoMatch from "./pages/NoMatch.tsx";
 import React from "react";
 import ProjectPage from "./pages/ProjectPage.tsx";
 import { projects } from "./assets/index.tsx";
+import { useOverlayScrollbars } from "overlayscrollbars-react";
 
 function App() {
+  const [initBodyOverlayScrollbars] = useOverlayScrollbars({
+    defer: true,
+    options: {
+      scrollbars: {
+        autoHide: "scroll",
+      },
+    },
+  });
+
+  initBodyOverlayScrollbars({
+    target: document.body,
+    cancel: {
+      body: false,
+    },
+  });
+
   return (
     <div className="font-[inter]">
       <Routes>

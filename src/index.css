@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("overlayscrollbars/styles/overlayscrollbars.css");
 
 /* Background color to ensure overscroll remains colored */
 html {
