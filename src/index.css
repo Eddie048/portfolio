@@ -58,8 +58,10 @@ body {
 
 .page-section {
   @apply max-w-[1000px];
+  @apply w-full;
   @apply mx-auto;
-  @apply p-10;
+  @apply sm:p-10;
+  @apply p-5;
   @apply h-full;
   @apply mb-24;
   @apply bg-background-secondary;
