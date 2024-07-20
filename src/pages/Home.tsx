@@ -33,7 +33,7 @@ const Home = () => {
               Eddie Stump
             </h1>
             <h2 className="text-2xl text-text">
-              I'm a Software Engineer and Web Developer
+              I'm an aspiring Software Engineer and Web Developer
             </h2>
             <div className="flex flex-row max-[475px]:flex-col md:max-[895px]:flex-col gap-4 pt-6">
               <a href="/about-me" className="button">
