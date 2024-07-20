@@ -17,32 +17,25 @@ body {
 
 .button {
   @apply text-text;
-  @apply border-accent;
   @apply bg-accent;
   @apply flex;
-  @apply border-2;
   @apply items-center;
-  @apply w-fit;
   @apply hover:bg-accent-dark;
-  @apply hover:border-accent-dark;
   @apply rounded-full;
-  @apply text-xl;
+  @apply sm:text-xl text-base;
   @apply px-8;
   @apply py-2;
+  @apply text-center;
 }
 
 .button-small {
   @apply text-text;
-  @apply border-accent;
   @apply bg-accent;
   @apply flex;
-  @apply border-2;
   @apply items-center;
-  @apply w-fit;
   @apply hover:bg-accent-dark;
-  @apply hover:border-accent-dark;
   @apply rounded-full;
-  @apply lg:text-lg;
+  @apply lg:text-lg text-base;
   @apply px-4;
   @apply lg:py-1 py-0.5;
 }
@@ -73,6 +66,6 @@ body {
   @apply shadow-text;
   @apply shadow-md;
   @apply md:max-w-[600px];
-  @apply h-full;
+  @apply w-full;
   @apply mx-auto;
 }
