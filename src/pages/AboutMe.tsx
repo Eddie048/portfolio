@@ -2,15 +2,84 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { IoIosArrowForward } from "react-icons/io";
+import {
+  biking,
+  camel,
+  granada,
+  group_mountain,
+  hiking,
+  mountain,
+  skiing,
+  sunset,
+} from "../assets/about-me";
 
 const AboutMe = () => {
   return (
     <>
       <Navbar />
       <div className="flex px-2 sm:px-6">
-        <div className="page-section mt-32">
-          <p className="title">About Me</p>
-          <p className="text-text text-lg"> Thisis about me</p>
+        <div className="page-section mt-32 flex flex-col gap-10">
+          <div className="flex flex-col gap-2">
+            <p className="title">About Me</p>
+            <p className="text-text text-lg">
+              Hi, welcome to my website! I'm Eddie, an aspiring software
+              engineer. Currently, I'm finishing my senior year at Worcester
+              Polytechnic Institute, and will be graduating in the spring with a
+              Bachelors degree in Computer Science and a minor in Data Science.
+              Feel free to check out my resume!
+            </p>
+            <p className="text-text text-lg">
+              Outside of school, I enjoy hiking, skiing, and camping.
+            </p>
+          </div>
+          <div className="about-me-section grid-cols-3">
+            <img
+              alt="Group mountaintop"
+              src={group_mountain}
+              className="about-me-image h-full object-cover"
+            />
+            <img
+              alt="A group of friends and I skiing in New Hampshire"
+              src={skiing}
+              className="about-me-image col-span-2"
+            />
+            <img
+              alt="A friend and I on a mountain in New Hampshire"
+              src={hiking}
+              className="about-me-image col-span-2 h-full object-cover"
+            />
+            <img
+              alt="Biking in Massachusetts"
+              src={biking}
+              className="about-me-image"
+            />
+            <img
+              alt="A mountain in Colorado"
+              src={mountain}
+              className="about-me-image col-span-3 h-[300px] w-full object-cover"
+            />
+          </div>
+          <p className="text-text text-lg">
+            This past spring, I also had the opportunity to study abroad in the
+            south of Spain for two months.
+          </p>
+          <div className="about-me-section grid-cols-2">
+            <img
+              alt="Exploring the city of Granada"
+              src={granada}
+              className="about-me-image max-h-[300px] w-full object-cover"
+            />
+            <img
+              alt="A beautiful sunset in Spain"
+              src={sunset}
+              className="about-me-image col-span-2 h-[300px] w-full object-cover"
+            />
+            <img
+              alt="A camel and I in Morocco"
+              src={camel}
+              className="about-me-image max-h-[300px] w-full object-cover"
+            />
+          </div>
           <a href="/" className="button mx-auto md:mx-0">
             Return to home page <IoIosArrowForward className="ml-2" />
           </a>

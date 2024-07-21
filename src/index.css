@@ -76,3 +76,15 @@ body {
   @apply h-full;
   @apply mx-auto;
 }
+
+.about-me-image {
+  @apply rounded-lg;
+  @apply shadow-shadow shadow-md;
+}
+
+.about-me-section {
+  @apply grid;
+  @apply grid-flow-dense;
+  @apply lg:gap-8 gap-4;
+  @apply sm:px-12 lg:px-24;
+}
