@@ -26,10 +26,14 @@ const AboutMe = () => {
               engineer. Currently, I'm finishing my senior year at Worcester
               Polytechnic Institute, and will be graduating in the spring with a
               Bachelors degree in Computer Science and a minor in Data Science.
-              Feel free to check out my resume!
+              Feel free to check out my resume linked in the footer at the
+              bottom of the page!
             </p>
             <p className="text-text text-lg">
-              Outside of school, I enjoy hiking, skiing, and camping.
+              Outside of school, I have a black belt in Taekwondo and have
+              achieved the rank of Eagle in the Boy Scouts of America. I enjoy
+              hiking, skiing, and camping. I also read, play chess, and play
+              videogames with friends.
             </p>
           </div>
           <div className="about-me-section grid-cols-3">
@@ -60,8 +64,12 @@ const AboutMe = () => {
             />
           </div>
           <p className="text-text text-lg">
-            This past spring, I also had the opportunity to study abroad in the
-            south of Spain for two months.
+            In the spring of my Junior year at WPI, I also had the opportunity
+            to study abroad in the south of Spain for two months. While there, I
+            worked on a project studying the feasability of a (relatively) new
+            manufacturing technology, WAAM, to repair ships in the south of
+            Spain. As you can see below, I also had some time for cultural trips
+            around Spain and Morocco.
           </p>
           <div className="about-me-section grid-cols-2">
             <img

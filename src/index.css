@@ -86,5 +86,5 @@ body {
   @apply grid;
   @apply grid-flow-dense;
   @apply lg:gap-8 gap-4;
-  @apply sm:px-12 lg:px-24;
+  @apply sm:px-20 lg:px-40;
 }
