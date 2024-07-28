@@ -7,7 +7,7 @@ export const theme = {
   colors: {
     accent: {
       DEFAULT: colors.sky[300],
-      dark: colors.sky[400],
+      secondary: colors.sky[200],
     },
     white: colors.white,
     background: {
