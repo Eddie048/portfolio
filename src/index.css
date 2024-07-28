@@ -73,10 +73,11 @@ body {
 .about-me-image {
   @apply rounded-lg;
   @apply shadow-shadow shadow-md;
+  @apply object-cover;
 }
 
 .about-me-section {
-  @apply grid;
+  @apply grid items-stretch;
   @apply grid-flow-dense;
   @apply lg:gap-8 gap-4;
   @apply sm:px-20 lg:px-40;

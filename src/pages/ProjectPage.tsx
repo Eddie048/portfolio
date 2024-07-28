@@ -59,11 +59,11 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
           })}
           <div className="flex md:flex-row flex-col gap-4">
             {links.map(({ name, url, id }) => (
-              <a key={id} to={url} className="button w-full md:w-fit">
+              <a key={id} href={url} className="button w-full md:w-fit">
                 <p className="mx-auto">{name}</p>
               </a>
             ))}
-            <a key={-1} to="/" className="button w-full md:w-fit">
+            <a key={-1} href="/" className="button w-full md:w-fit">
               <div className="mx-auto flex flex-row items-center">
                 <p>Return to home page</p>
                 <IoIosArrowForward className="ml-1" />

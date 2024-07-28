@@ -40,7 +40,7 @@ const AboutMe = () => {
             <img
               alt="Group mountaintop"
               src={group_mountain}
-              className="about-me-image h-full object-cover"
+              className="about-me-image"
             />
             <img
               alt="A group of friends and I skiing in New Hampshire"
@@ -50,7 +50,7 @@ const AboutMe = () => {
             <img
               alt="A friend and I on a mountain in New Hampshire"
               src={hiking}
-              className="about-me-image col-span-2 h-full object-cover"
+              className="about-me-image col-span-2"
             />
             <img
               alt="Biking in Massachusetts"
@@ -60,7 +60,7 @@ const AboutMe = () => {
             <img
               alt="A mountain in Colorado"
               src={mountain}
-              className="about-me-image col-span-3 h-[300px] w-full object-cover"
+              className="about-me-image col-span-3 max-h-[300px] w-full"
             />
           </div>
           <p className="text-text text-lg">
@@ -75,21 +75,24 @@ const AboutMe = () => {
             <img
               alt="Exploring the city of Granada"
               src={granada}
-              className="about-me-image max-h-[300px] w-full object-cover"
+              className="about-me-image max-h-[300px] w-full"
             />
             <img
               alt="A beautiful sunset in Spain"
               src={sunset}
-              className="about-me-image col-span-2 h-[300px] w-full object-cover"
+              className="about-me-image col-span-2 max-h-[300px] w-full"
             />
             <img
               alt="A camel and I in Morocco"
               src={camel}
-              className="about-me-image max-h-[300px] w-full object-cover"
+              className="about-me-image max-h-[300px] w-full"
             />
           </div>
-          <a href="/" className="button mx-auto md:mx-0">
-            Return to home page <IoIosArrowForward className="ml-2" />
+          <a key={-1} href="/" className="button w-full md:w-fit">
+            <div className="mx-auto flex flex-row items-center">
+              <p>Return to home page</p>
+              <IoIosArrowForward className="ml-1" />
+            </div>
           </a>
         </div>
       </div>
