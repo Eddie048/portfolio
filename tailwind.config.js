@@ -16,5 +16,6 @@ export const theme = {
       hover: colors.gray[100],
     },
     text: colors.black,
+    shadow: colors.gray[400],
   },
 };

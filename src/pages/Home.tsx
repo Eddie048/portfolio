@@ -27,23 +27,29 @@ const Home = () => {
             alt="Eddie"
             className="w-[300px] h-full mx-auto md:mx-0 rounded-lg"
           />
-          <div className="flex flex-col justify-center h-full">
+          <div className="flex flex-col">
             <p className="text-text font-bold text-xl">Hello, my name is</p>
             <h1 className="lg:text-7xl text-5xl font-bold text-text py-2">
               Eddie Stump
             </h1>
             <h2 className="text-2xl text-text">
-              I'm a Software Engineer and Web Developer
+              I'm an aspiring Software Engineer and Web Developer
             </h2>
-            <Link
-              to="projects"
-              smooth="true"
-              duration={500}
-              offset={-150}
-              className="animate-bounce button w-fit cursor-pointer my-7"
-            >
-              Explore my work <IoIosArrowForward className="ml-2" />
-            </Link>
+            <div className="flex flex-row max-[475px]:flex-col md:max-[895px]:flex-col gap-4 pt-6">
+              <a href="/about-me" className="button">
+                About Me
+              </a>
+              <Link
+                to="projects"
+                smooth="true"
+                duration={500}
+                offset={-150}
+                className="button cursor-pointer"
+              >
+                Explore my work <IoIosArrowForward className="ml-2" />
+              </Link>
+            </div>
+            {/*765 - 895 */}
           </div>
         </div>
         <Projects />

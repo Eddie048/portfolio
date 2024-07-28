@@ -5,6 +5,7 @@ import React from "react";
 import ProjectPage from "./pages/ProjectPage.tsx";
 import { projects } from "./assets/index.tsx";
 import { useOverlayScrollbars } from "overlayscrollbars-react";
+import AboutMe from "./pages/AboutMe.tsx";
 
 function App() {
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
@@ -27,6 +28,7 @@ function App() {
     <div className="font-[inter]">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-me" element={<AboutMe />} />
         {projects.map(({ projectTitle, pageAddress, content, links }) => (
           <Route
             path={pageAddress}
