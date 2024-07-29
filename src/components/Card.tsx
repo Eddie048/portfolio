@@ -3,11 +3,11 @@ import React from "react";
 type CardProps = {
   title: string;
   description: string;
-  media_src: string;
+  mediaSrc: string;
   pageAddress: string;
 };
 
-const Card = ({ title, description, media_src, pageAddress }: CardProps) => {
+const Card = ({ title, description, mediaSrc, pageAddress }: CardProps) => {
   return (
     <a
       href={pageAddress}
@@ -16,16 +16,16 @@ const Card = ({ title, description, media_src, pageAddress }: CardProps) => {
       <p className="text-text text-xl font-bold pb-2">{title}</p>
       <div className="relative overflow-hidden aspect-video rounded-lg">
         <div className="group-hover:translate-y-full transition-transform duration-500">
-          {media_src.endsWith(".mov") ? (
+          {mediaSrc.endsWith(".mov") ? (
             <video
-              src={media_src}
+              src={mediaSrc}
               controls={false}
               autoPlay={true}
               loop={true}
               muted={true}
             />
           ) : (
-            <img src={media_src} alt={title} />
+            <img src={mediaSrc} alt={title} />
           )}
         </div>
         <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1">

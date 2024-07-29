@@ -22,7 +22,8 @@ type project = {
   projectTitle: string;
   pageAddress: string;
   description: string;
-  display_media: string;
+  displayMedia: string;
+  show: boolean;
   content: {
     type: "text" | "video" | "image";
     data: string;
@@ -41,7 +42,8 @@ const projects: project[] = [
     pageAddress: "planet-physics",
     description:
       "As a fun side project during high school, I used equations from an AP physics class to create a 2D orbital mechanics simulation.",
-    display_media: planet_physics_demo,
+    displayMedia: planet_physics_demo,
+    show: true,
     content: [
       {
         type: "text",
@@ -77,7 +79,8 @@ const projects: project[] = [
     pageAddress: "hypixel-player-tracker",
     description:
       "To gain an advantage in my favorite video game, I wrote a python script that used a custom image to text algorithm and the game's API to tell me the skill level of the other players.",
-    display_media: hypixel_player_tracker_demo,
+    displayMedia: hypixel_player_tracker_demo,
+    show: true,
     content: [
       {
         type: "text",
@@ -113,7 +116,8 @@ const projects: project[] = [
     pageAddress: "hospital-application",
     description:
       "This project was a mock service request manager and mapping service for Brigham and Women's hospital. It includes a database, pathfinding, user authentication, and much more.",
-    display_media: hospital_login,
+    displayMedia: hospital_login,
+    show: true,
     content: [
       {
         type: "text",
@@ -202,7 +206,8 @@ const projects: project[] = [
     pageAddress: "portfolio-website",
     description:
       "The website you are on now was written to better learn react, tailwind, and website deployment on Vercel.",
-    display_media: website_icon,
+    displayMedia: website_icon,
+    show: false,
     content: [
       {
         type: "text",
@@ -233,7 +238,8 @@ const projects: project[] = [
     pageAddress: "poker-project",
     description:
       "This was a simple poker game that can be played against the computer with turning in cards, betting, sorting, and scoring hands against each other.",
-    display_media: poker_icon,
+    displayMedia: poker_icon,
+    show: false,
     content: [
       {
         type: "text",
@@ -279,7 +285,8 @@ const projects: project[] = [
     pageAddress: "threading-problems",
     description:
       "As part of an operating systems course, I solved various threading problems to ensure dozens of threads could work together, ensuring fairness and avoiding deadlock.",
-    display_media: juststance_demo,
+    displayMedia: juststance_demo,
+    show: false,
     content: [
       {
         type: "text",

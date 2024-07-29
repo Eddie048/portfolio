@@ -12,15 +12,18 @@ const Projects = () => {
       </p>
       <div className="grid grid-cols-1 min-[815px]:grid-cols-2 justify-items-center mx-auto gap-6 lg:gap-14 mt-6">
         {projects.map(
-          ({ projectTitle, description, display_media, pageAddress }) => (
-            <Card
-              key={projectTitle}
-              title={projectTitle}
-              description={description}
-              media_src={display_media}
-              pageAddress={pageAddress}
-            />
-          )
+          ({ projectTitle, description, displayMedia, pageAddress, show }) =>
+            show ? (
+              <Card
+                key={projectTitle}
+                title={projectTitle}
+                description={description}
+                mediaSrc={displayMedia}
+                pageAddress={pageAddress}
+              />
+            ) : (
+              <></>
+            )
         )}
       </div>
     </div>
