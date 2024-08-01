@@ -17,6 +17,8 @@ import poker_output_3 from "./poker-project/poker-output-3.png";
 import poker_code from "./poker-project/poker-code.png";
 import juststance_demo from "./threading-problems/juststance-demo.png";
 import shueworld_demo from "./threading-problems/shueworld-demo.png";
+import visualizations_display from "./visualizations/visualizations.mp4";
+import delaunay_demo from "./visualizations/delaunay.mov";
 
 type project = {
   projectTitle: string;
@@ -312,6 +314,31 @@ const projects: project[] = [
         type: "image",
         data: shueworld_demo,
         id: 4,
+      },
+    ],
+  },
+  {
+    projectTitle: "Visualizations",
+    pageAddress: "visualizations",
+    description:
+      "As a fun summer project, I created a few visualizations in javascript using HTML canvas graphics.",
+    displayMedia: visualizations_display,
+    show: true,
+    content: [
+      {
+        type: "text",
+        data: "As a fun summer project, and to learn more about Javascript, the browser event loop, and specific algorithms that interested me, I created a series of web based visualizations that can be seen below.",
+        id: 0,
+      },
+      {
+        type: "text",
+        data: "While exploring particle effects, I became interested in a specific effect, a wave of connected triangles that seemed to flow over the screen. Specifically, I was curious how a set of points could be turned into a set of triangles, called a triangulation. It turns out that a popular method often used to triangulations is the Delaunay triangulation, which aims to maximise the size of the smallest angle in the diagram. I created the below animation to show the evolution of a triangulation as more points are added. As points are added, the algorithm checks if the new point is within the circumcircle described by any of the existing triangles. If it is, that means larger angles can be created by 'flipping' triangles, by deleting existing triangles creating new ones that more efficently connect points in the diagram.",
+        id: 1,
+      },
+      {
+        type: "video",
+        data: delaunay_demo,
+        id: 2,
       },
     ],
   },

@@ -16,7 +16,7 @@ const Card = ({ title, description, mediaSrc, pageAddress }: CardProps) => {
       <p className="text-text text-xl font-bold pb-2">{title}</p>
       <div className="relative overflow-hidden aspect-video rounded-lg">
         <div className="group-hover:translate-y-full transition-transform duration-500">
-          {mediaSrc.endsWith(".mov") ? (
+          {mediaSrc.endsWith(".mov") || mediaSrc.endsWith(".mp4") ? (
             <video
               src={mediaSrc}
               controls={false}
