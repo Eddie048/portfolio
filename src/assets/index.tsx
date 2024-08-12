@@ -19,8 +19,6 @@ import juststance_demo from "./threading-problems/juststance-demo.png";
 import shueworld_demo from "./threading-problems/shueworld-demo.png";
 import visualizations_display from "./visualizations/visualizations.mp4";
 import delaunay_demo from "./visualizations/delaunay.mov";
-import standard_slime from "./visualizations/standard-slime-settings.mp4";
-import strange_slime from "./visualizations/strange-slime-settings.mp4";
 
 type project = {
   projectTitle: string;
@@ -29,7 +27,7 @@ type project = {
   displayMedia: string;
   show: boolean;
   content: {
-    type: "text" | "video" | "image";
+    type: "text" | "video" | "image" | "embed";
     data: string;
     id: number;
   }[];
@@ -353,8 +351,8 @@ const projects: project[] = [
         id: 4,
       },
       {
-        type: "video",
-        data: standard_slime,
+        type: "embed",
+        data: "https://www.youtube.com/embed/y2DTXXPwH0k?&autoplay=1&mute=1&loop=1&controls=0",
         id: 5,
       },
       {
@@ -363,8 +361,8 @@ const projects: project[] = [
         id: 6,
       },
       {
-        type: "video",
-        data: strange_slime,
+        type: "embed",
+        data: "https://www.youtube.com/embed/6HFgoxLJfP8?&autoplay=1&mute=1&loop=1&controls=0",
         id: 7,
       },
     ],

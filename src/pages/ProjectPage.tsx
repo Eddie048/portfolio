@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 type projectProps = {
   projectName: string;
   content: {
-    type: "text" | "image" | "video";
+    type: "text" | "image" | "video" | "embed";
     data: string;
     id: number;
   }[];
@@ -52,6 +52,15 @@ const ProjectPage = ({ projectName, content, links = [] }: projectProps) => {
                     muted={true}
                     className="project-media"
                   />
+                );
+              case "embed":
+                return (
+                  <iframe
+                    src={data}
+                    key={id}
+                    title={id.toString()}
+                    className="project-media aspect-video"
+                  ></iframe>
                 );
               default:
                 return <></>;
